@@ -1,0 +1,1808 @@
+{
+  "intents": [
+    {
+      "intent": "ADMINISTRATION",
+      "examples": [
+        {
+          "text": "WHO IS THE HEAD OF COLLEGE"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "CollegeInformation",
+      "examples": [
+        {
+          "text": "Administration"
+        },
+        {
+          "text": "Canteen"
+        },
+        {
+          "text": "Chapel"
+        },
+        {
+          "text": "college"
+        },
+        {
+          "text": "Departments"
+        },
+        {
+          "text": "Hostel"
+        },
+        {
+          "text": "MBCET"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Departments",
+      "examples": [
+        {
+          "text": "Different courses"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "about"
+        },
+        {
+          "text": "Administration"
+        },
+        {
+          "text": "branches"
+        },
+        {
+          "text": "bursar"
+        },
+        {
+          "text": "CE?"
+        },
+        {
+          "text": "college"
+        },
+        {
+          "text": "College information"
+        },
+        {
+          "text": "CSE?"
+        },
+        {
+          "text": "Departments"
+        },
+        {
+          "text": "Do MBCET have all resources and facilities like labs, library, hostel, canteen, chapel, transportation, amenities?"
+        },
+        {
+          "text": "ECE?"
+        },
+        {
+          "text": "EE?"
+        },
+        {
+          "text": "Facilities"
+        },
+        {
+          "text": "Mar Baselios College of Engg and Tech"
+        },
+        {
+          "text": "MBCET college"
+        },
+        {
+          "text": "mbt"
+        },
+        {
+          "text": "ME?"
+        },
+        {
+          "text": "mech"
+        },
+        {
+          "text": "no"
+        },
+        {
+          "text": "Pls give me the details of MBCET College?"
+        },
+        {
+          "text": "principal"
+        },
+        {
+          "text": "Sports"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "FACILITIES",
+      "examples": [
+        {
+          "text": "How many courses in CSE?"
+        },
+        {
+          "text": "How many faculties are there in CSE?"
+        },
+        {
+          "text": "How many labs in CSE?"
+        },
+        {
+          "text": "How many students in a batch?"
+        },
+        {
+          "text": "What are the courses in CSE?"
+        },
+        {
+          "text": "Who is the HOD of CSE?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hai"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "Thank you"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "ADMINISTRATION",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "administration",
+          "synonyms": [
+            "bursar",
+            "director",
+            "head",
+            "president",
+            "principal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "bursar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "director",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "president",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "PRINCIPAL",
+          "synonyms": [
+            "HEAD"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "CollegeInformation",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Administration",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Canteen",
+          "synonyms": [
+            "Food",
+            "Food court"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Chapel",
+          "synonyms": [
+            "Prayer room"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Departments",
+          "synonyms": [
+            "Department",
+            "Dept"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Facilities",
+          "synonyms": [
+            "facility"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hostel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "information",
+          "synonyms": [
+            "Baselios",
+            "Baselious",
+            "college",
+            "college info",
+            "info",
+            "Mar Baselios",
+            "Mar baselios college of engg and tech",
+            "Mar Baselios College of Engineering and Technology",
+            "mbcet",
+            "mbt",
+            "ya",
+            "yes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Library",
+          "synonyms": [
+            "Lib"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sports",
+          "synonyms": [
+            "sport"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Departments",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Civil Engineering",
+          "synonyms": [
+            "CE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Computer Science and Engineering",
+          "synonyms": [
+            "Computer Science",
+            "CS",
+            "CSE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Electrical Engineering",
+          "synonyms": [
+            "EE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Electronics and Communication",
+          "synonyms": [
+            "EC",
+            "ECE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mechanical Engineering",
+          "synonyms": [
+            "ME"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "about",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "administration",
+          "synonyms": [
+            "adm"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bursar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Canteen",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "CE",
+          "synonyms": [
+            "about ce",
+            "civil"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Chapel",
+          "synonyms": [
+            "Prayer"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "CSE",
+          "synonyms": [
+            "about cse",
+            "COMPUTER",
+            "COMPUTER SCIENCE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "DEPARTMENTS",
+          "synonyms": [
+            "branch",
+            "branches",
+            "BTech",
+            "B.tech",
+            "course",
+            "courses",
+            "DEPARTMENT",
+            "DEPT"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "director",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ECE",
+          "synonyms": [
+            "about  ec",
+            "ELECTRONICS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "EE",
+          "synonyms": [
+            "about  ee",
+            "ELECTRICAL"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Facilities",
+          "synonyms": [
+            "amenities",
+            "bus",
+            "chapel",
+            "ground",
+            "hall",
+            "labs",
+            "prayer hall",
+            "resources",
+            "sports",
+            "transportation"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Faculties",
+          "synonyms": [
+            "staff"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hostel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "INFORMATION",
+          "synonyms": [
+            "baselios",
+            "baselious",
+            "college",
+            "college info",
+            "info",
+            "instituition",
+            "Mar Baselios College of Engg and Tech",
+            "Mar Baselios College of Engineering and Technology",
+            "mbcet",
+            "mbt",
+            "ya",
+            "yes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Library",
+          "synonyms": [
+            "Lib"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ME",
+          "synonyms": [
+            "about me",
+            "mech",
+            "MECHANICAL"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "PE",
+          "synonyms": [
+            "about  pe",
+            "pe",
+            "PHYSICAL EDUCATION"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Principal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Research",
+          "synonyms": [
+            "PhD",
+            "Ph.D"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Science & Humanities",
+          "synonyms": [
+            "about bs",
+            "BASIC SCIENCE",
+            "BS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sports",
+          "synonyms": [
+            "ground",
+            "play",
+            "sport"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "student",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "FACILITIES",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "batches",
+          "synonyms": [
+            "batch"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "courses",
+          "synonyms": [
+            "course"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "CSE",
+          "synonyms": [
+            "COMPUTER",
+            "COMPUTER SCIENCE"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Head of Department",
+          "synonyms": [
+            "Head of dept",
+            "HOD"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "labs",
+          "synonyms": [
+            "computer",
+            "lab",
+            "laboratories"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "strength",
+          "synonyms": [
+            "count"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "ga",
+            "vga"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Goodbye",
+          "synonyms": [
+            "bye",
+            "c u",
+            "no",
+            "nothing",
+            "see you"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "ge",
+            "vge"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "gm",
+            "vgm"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Thankyou",
+          "synonyms": [
+            "Thanks",
+            "Thank you",
+            "tq"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_10_1601731204402",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_10_1601724572239",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1601729014281"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @greetings",
+      "dialog_node": "node_10_1601712392573",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "College Information",
+      "parent": "node_10_1601731204402",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#CollegeInformation || @CollegeInformation",
+      "dialog_node": "node_10_1601724572239"
+    },
+    {
+      "type": "standard",
+      "title": "Enquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Enquiry || @enquiry",
+      "dialog_node": "node_10_1601731204402",
+      "previous_sibling": "node_10_1601712392573"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " Welcome to MAR BASELIOS COLLEGE OF ENGINEERING AND TECHNOLOGY (MBCET). \nMar Baselios College of Engineering and Technology, is an engineering educational institution located in Nalanchira, Trivandrum, Kerala, India offering engineering education and research. The college is located on a hillock in the Bethany Hills. As a proud part of the Mar Ivanios Vidyanagar on the blessed Bethany Hills, deriving the inner strength of truth and goodness from the visionary Patrons, MAR BASELIOS COLLEGE OF ENGINEERING AND TECHNOLOGY (MBCET) inspires the aspirations of generations of knowledge-seekers…… For more details you may visit https://mbcet.ac.in/."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Departments",
+                "value": {
+                  "input": {
+                    "text": "Departments"
+                  }
+                }
+              },
+              {
+                "label": "Administration",
+                "value": {
+                  "input": {
+                    "text": "Administration"
+                  }
+                }
+              },
+              {
+                "label": "Facilities",
+                "value": {
+                  "input": {
+                    "text": "Facilities"
+                  }
+                }
+              },
+              {
+                "label": "Library",
+                "value": {
+                  "input": {
+                    "text": "The library has an excellent collection of books, journals and non-book materials in Science, Engineering, Technology, Humanities, Social science and Management. It maintains separate collections of Reference Books, standard, bound volumes of Journals, Technical Reports, previous question papers, CD-ROMSs, DVDs, Periodicals, etc. At present, the library has a collection of around 10801 titles and 26604 volumes of books, Reports and Reference material. Besides standard textbooks, the library contains books of literature and general interest."
+                  }
+                }
+              },
+              {
+                "label": "Hostel",
+                "value": {
+                  "input": {
+                    "text": "Men’s Hostel MBCET Hostel for men (Mar Aprem Hostel) can accommodate around 350 students on single room, twin sharing or dormitory basis. Spacious rooms with separate area for living and study are provided. Warden: Rev. Fr. John Vilayil Phone: 0471-2534415   Ladies Hostel MBCET Hostel for women on the campus can accommodate around 250 students. The hostel has 83 three shared rooms. Warden: Rev. Sister Jessin, FDJSH – (Mob: 8281887569)"
+                  }
+                }
+              },
+              {
+                "label": "Canteen",
+                "value": {
+                  "input": {
+                    "text": "The Canteen is a meeting place for students and staff during break hours. Located in the Amenities Centre, Akshaya, the canteen provides nutritious and hygenic food at nominal cost. Besides the Canteen, a Cafeteria also works in the College campus, on working days."
+                  }
+                }
+              },
+              {
+                "label": "Chapel",
+                "value": {
+                  "input": {
+                    "text": "Prayer and worship are important in the life of all people of faith. MBCET fulfils this innate desire, for those who wish, through the St. Basil’s Chapel. Erected in the shape of a bell, under the Buddhist influence by the Founder, it offers a centre for quiet worship and meditation for all. The chapel leads us to discover and explore authentic avenues by which we glorify God. The Jesus Youth MBCET wing conducts regular prayer meetings. Every year a short term Yoga course is conducted besides the Yes! + Course under the Art of Living Programme."
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:INFORMATION",
+      "dialog_node": "response_10_1601756188733",
+      "previous_sibling": "node_10_1601724572239"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Department of Civil Engineering is a vibrant place for learning, where students pursue their educational interests in order to lead the next generation to better prospects. The Department has a number of ongoing sponsored research projects under various schemes from different funding agencies.The strong and dedicated group of faculty takes up consultancy activities in various streams of Civil Engineering. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:CE",
+      "dialog_node": "response_10_1601760562049",
+      "previous_sibling": "response_6_1601760432838"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You are most welcome. Any more queries?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601712392573",
+      "conditions": "@greetings:Thankyou",
+      "dialog_node": "response_10_1601794212500",
+      "previous_sibling": "response_9_1601712754643"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening! How may I help you?!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601712392573",
+      "conditions": "@greetings:(Good Evening)",
+      "dialog_node": "response_1_1601712684323",
+      "previous_sibling": "response_5_1601712627803"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Management comprises of"
+              },
+              {
+                "text": "1. PRESIDENT"
+              },
+              {
+                "text": "2. DIRECTOR"
+              },
+              {
+                "text": "3. BURSAR"
+              },
+              {
+                "text": "4. PRINCIPAL"
+              },
+              {
+                "text": "5. COLLEGE COUNCIL"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1601724572239",
+      "conditions": "@CollegeInformation:Administration",
+      "dialog_node": "response_2_1601756548298",
+      "previous_sibling": "response_7_1601728810284"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The college has 7 Departments. "
+              },
+              {
+                "text": "1. COMPUTER SCIENCE AND ENGINEERING. "
+              },
+              {
+                "text": "2. ELECTRONICS AND COMMUNICATION ENGINEERING. "
+              },
+              {
+                "text": "3. ELECTRICAL & ELECTRONICS ENGINEERING. "
+              },
+              {
+                "text": "4. CIVIL ENGINEERING. "
+              },
+              {
+                "text": "5. MECHANICAL ENGINEERING. "
+              },
+              {
+                "text": "6. SCIENCE AND HUMANITIES. "
+              },
+              {
+                "text": "7. PHYSICAL EDUCATION. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Please visit the link for more details - \nhttps://mbcet.ac.in/departments/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:DEPARTMENTS",
+      "dialog_node": "response_2_1601758493767",
+      "previous_sibling": "response_7_1601732386052"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "MBCET gives due importance to the extracurricular activities along with academic subjects for the all round development of the students.Sports& Games aim to provide adequate Physical Education facilities that are wholesome and attractive so as to ensure a sound mind in a sound body.While coping with the pressures of studies, one needs to be healthy, both emotionally and physically. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:PE",
+      "dialog_node": "response_2_1601760837565",
+      "previous_sibling": "response_7_1601760819879"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Management comprises of"
+              },
+              {
+                "text": "1. PRESIDENT"
+              },
+              {
+                "text": "2. DIRECTOR"
+              },
+              {
+                "text": "3. BURSAR"
+              },
+              {
+                "text": "4. PRINCIPAL"
+              },
+              {
+                "text": "5. COLLEGE COUNCIL"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:administration",
+      "dialog_node": "response_3_1601789816129",
+      "previous_sibling": "response_9_1601789791210"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The library has an excellent collection of books, journals and non-book materials in Science, Engineering, Technology, Humanities, Social science and Management. It maintains separate collections of Reference Books, standard, bound volumes of Journals, Technical Reports, previous question papers, CD-ROMSs, DVDs, Periodicals, etc. At present, the library has a collection of around 10801 titles and 26604 volumes of books, Reports and Reference material. Besides standard textbooks, the library contains books of literature and general interest."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601724572239",
+      "conditions": "@CollegeInformation:Library",
+      "dialog_node": "response_3_1601790311847",
+      "previous_sibling": "response_7_1601760170525"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Men’s Hostel MBCET Hostel for men (Mar Aprem Hostel) can accommodate around 350 students on single room, twin sharing or dormitory basis. Spacious rooms with separate area for living and study are provided. Warden: Rev. Fr. John Vilayil Phone: 0471-2534415   Ladies Hostel MBCET Hostel for women on the campus can accommodate around 250 students. The hostel has 83 three shared rooms. Warden: Rev. Sister Jessin, FDJSH – (Mob: 8281887569)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601724572239",
+      "conditions": "@CollegeInformation:Hostel",
+      "dialog_node": "response_3_1601790320925",
+      "previous_sibling": "response_3_1601790311847"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Prayer and worship are important in the life of all people of faith. MBCET fulfils this innate desire, for those who wish, through the St. Basil’s Chapel. Erected in the shape of a bell, under the Buddhist influence by the Founder, it offers a centre for quiet worship and meditation for all. The chapel leads us to discover and explore authentic avenues by which we glorify God. The Jesus Youth MBCET wing conducts regular prayer meetings. Every year a short term Yoga course is conducted besides the Yes! + Course under the Art of Living Programme."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601724572239",
+      "conditions": "@CollegeInformation:Chapel",
+      "dialog_node": "response_3_1601790344329",
+      "previous_sibling": "response_9_1601790331952"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Mechanical Engineering is one of the oldest, broadest, and best-established of the Engineering Disciplines. The Mechanical Engineering Department is fully geared up to impart extensive quality education enriching the aspirants through industry oriented subject exposure which equip them to attain their cherished goals."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:ME",
+      "dialog_node": "response_4_1601760683898",
+      "previous_sibling": "response_7_1601760671925"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Men’s Hostel MBCET Hostel for men (Mar Aprem Hostel) can accommodate around 350 students on single room, twin sharing or dormitory basis. Spacious rooms with separate area for living and study are provided. Warden: Rev. Fr. John Vilayil Phone: 0471-2534415   Ladies Hostel MBCET Hostel for women on the campus can accommodate around 250 students. The hostel has 83 three shared rooms. Warden: Rev. Sister Jessin, FDJSH – (Mob: 8281887569)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:Hostel",
+      "dialog_node": "response_4_1601789778974",
+      "previous_sibling": "response_2_1601760837565"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The library has an excellent collection of books, journals and non-book materials in Science, Engineering, Technology, Humanities, Social science and Management. It maintains separate collections of Reference Books, standard, bound volumes of Journals, Technical Reports, previous question papers, CD-ROMSs, DVDs, Periodicals, etc. At present, the library has a collection of around 10801 titles and 26604 volumes of books, Reports and Reference material. Besides standard textbooks, the library contains books of literature and general interest."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:Library",
+      "dialog_node": "response_4_1601791513871",
+      "previous_sibling": "response_3_1601789816129"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "MBCET gives due importance to the extracurricular activities along with academic subjects for the all round development of the students.Sports& Games aim to provide adequate Physical Education facilities that are wholesome and attractive so as to ensure a sound mind in a sound body.While coping with the pressures of studies, one needs to be healthy, both emotionally and physically. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601724572239",
+      "conditions": "@CollegeInformation:sports",
+      "dialog_node": "response_4_1601799162675",
+      "previous_sibling": "response_3_1601790344329"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning! How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601712392573",
+      "conditions": "@greetings:(Good Morning)",
+      "dialog_node": "response_5_1601712627803"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Canteen is a meeting place for students and staff during break hours. Located in the Amenities Centre, Akshaya, the canteen provides nutritious and hygenic food at nominal cost. Besides the Canteen, a Cafeteria also works in the College campus, on working days."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:Canteen",
+      "dialog_node": "response_5_1601792117816",
+      "previous_sibling": "response_4_1601791513871"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The CSE Department offers 3 courses which include Btech, Mtech and PhD. The head of the department is Dr. Tessy Mathew. THere are 25 Faculties in this department. There are 2 batches in CSE department. The total strength in CSE Btech course is 120. There are 7 labs in CSE including UG, PG and Research labs."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:CSE",
+      "dialog_node": "response_6_1601760239766",
+      "previous_sibling": "response_2_1601758493767"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Department has well qualified and competent faculty with Doctoral and Post-Graduate degrees in the areas of Electronics, Communication and Instrumentation with expertise in core areas of Electronics Engineering such as DSP, Microprocessors, VLSI Engineering, Image Processing."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:ECE",
+      "dialog_node": "response_6_1601760432838",
+      "previous_sibling": "response_6_1601760239766"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Rev. Fr. John Vilayil"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:Bursar",
+      "dialog_node": "response_6_1601792867081",
+      "previous_sibling": "response_5_1601792117816"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dr. Abraham T. Mathew"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:Principal",
+      "dialog_node": "response_6_1601793133846",
+      "previous_sibling": "response_6_1601792867081"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please visit https://mbcet.ac.in/staff/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:Faculties",
+      "dialog_node": "response_6_1601796459155",
+      "previous_sibling": "response_7_1601795708679"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please visit https://mbcet.ac.in/students/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:student",
+      "dialog_node": "response_6_1601798914753",
+      "previous_sibling": "response_6_1601796459155"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The college has 7 Departments.  "
+              },
+              {
+                "text": "1. COMPUTER SCIENCE AND ENGINEERING"
+              },
+              {
+                "text": "2. ELECTRONICS AND COMMUNICATION ENGINEERING "
+              },
+              {
+                "text": "  3. ELECTRICAL ENGINEERING "
+              },
+              {
+                "text": "4. CIVIL ENGINEERING"
+              },
+              {
+                "text": "5. MECHANICAL ENGINEERING"
+              },
+              {
+                "text": "6. SCIENCE AND HUMANITIES"
+              },
+              {
+                "text": "7. PHYSICAL EDUCATION"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "Please visit the link for more details - \nhttps://mbcet.ac.in/departments/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601724572239",
+      "conditions": "@CollegeInformation:Departments",
+      "dialog_node": "response_7_1601728810284",
+      "previous_sibling": "handler_1_1601729014281"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The various facilities inside the Amenities Center include:"
+              },
+              {
+                "text": "1. Auditorium"
+              },
+              {
+                "text": "2. Store facilities"
+              },
+              {
+                "text": "3. A fully equipped gymnasium"
+              },
+              {
+                "text": "4. Rooms for discussions"
+              },
+              {
+                "text": "5. Badminton Court"
+              },
+              {
+                "text": "6. Basketball facilities"
+              },
+              {
+                "text": "7. Table Tennis tables"
+              },
+              {
+                "text": "8. Net Ball Court"
+              },
+              {
+                "text": "9. Bus Transportation"
+              },
+              {
+                "text": "10. Chapel / Prayer Room"
+              },
+              {
+                "text": "11. Library"
+              },
+              {
+                "text": "12. Canteen / Food court"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:Facilities",
+      "dialog_node": "response_7_1601732386052",
+      "previous_sibling": "response_10_1601756188733"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The various facilities inside the Amenities Center include:"
+              },
+              {
+                "text": "1. Auditorium"
+              },
+              {
+                "text": "2. Store facilities"
+              },
+              {
+                "text": "3. A fully equipped gymnasium"
+              },
+              {
+                "text": "4. Rooms for discussions"
+              },
+              {
+                "text": "5. Badminton Court"
+              },
+              {
+                "text": "6. Basketball facilities"
+              },
+              {
+                "text": "7. Table Tennis tables"
+              },
+              {
+                "text": "8. Net Ball Court"
+              },
+              {
+                "text": "9. Library"
+              },
+              {
+                "text": "10. Chapel / Prayer hall"
+              },
+              {
+                "text": "11. Canteen / Food court"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1601724572239",
+      "conditions": "@CollegeInformation:Facilities",
+      "dialog_node": "response_7_1601760170525",
+      "previous_sibling": "response_2_1601756548298"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The department of Electrical & Electronics Engineering was established in 2002. We currently have about 400 students, 30 faculty members, 11 supporting staff members and 2 post-doctoral fellows with us. The department runs under graduate programmes and post-graduate programmes to cater to the ever challenging needs of technical excellence in all areas "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:EE",
+      "dialog_node": "response_7_1601760671925",
+      "previous_sibling": "response_10_1601760562049"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "he Department of Science & Humanities was established in 2002. The Department offers courses in Engineering Mathematics, Engineering Physics and Engineering Chemistry within the Engineering curricula. A high standard is maintained in the Department when it comes to developing young minds. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:(Science & Humanities)",
+      "dialog_node": "response_7_1601760819879",
+      "previous_sibling": "response_4_1601760683898"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It was nice interating with you. Have a good day! Bye..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601712392573",
+      "conditions": "@greetings:Goodbye",
+      "dialog_node": "response_7_1601794349088",
+      "previous_sibling": "response_10_1601794212500"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "MBCET gives due importance to the extracurricular activities along with academic subjects for the all round development of the students.Sports& Games aim to provide adequate Physical Education facilities that are wholesome and attractive so as to ensure a sound mind in a sound body.While coping with the pressures of studies, one needs to be healthy, both emotionally and physically. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:Sports",
+      "dialog_node": "response_7_1601795708679",
+      "previous_sibling": "response_9_1601795585406"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " Welcome to MAR BASELIOS COLLEGE OF ENGINEERING AND TECHNOLOGY (MBCET). \nMar Baselios College of Engineering and Technology, is an engineering educational institution located in Nalanchira, Trivandrum, Kerala, India offering engineering education and research. The college is located on a hillock in the Bethany Hills. As a proud part of the Mar Ivanios Vidyanagar on the blessed Bethany Hills, deriving the inner strength of truth and goodness from the visionary Patrons, MAR BASELIOS COLLEGE OF ENGINEERING AND TECHNOLOGY (MBCET) inspires the aspirations of generations of knowledge-seekers…… For more details you may visit https://mbcet.ac.in/."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Information",
+            "options": [
+              {
+                "label": "Departments",
+                "value": {
+                  "input": {
+                    "text": "Departments"
+                  }
+                }
+              },
+              {
+                "label": "Administration",
+                "value": {
+                  "input": {
+                    "text": "Administration"
+                  }
+                }
+              },
+              {
+                "label": "Facilities",
+                "value": {
+                  "input": {
+                    "text": "Facilities"
+                  }
+                }
+              },
+              {
+                "label": "Library",
+                "value": {
+                  "input": {
+                    "text": "The library has an excellent collection of books, journals and non-book materials in Science, Engineering, Technology, Humanities, Social science and Management. It maintains separate collections of Reference Books, standard, bound volumes of Journals, Technical Reports, previous question papers, CD-ROMSs, DVDs, Periodicals, etc. At present, the library has a collection of around 10801 titles and 26604 volumes of books, Reports and Reference material. Besides standard textbooks, the library contains books of literature and general interest."
+                  }
+                }
+              },
+              {
+                "label": "Hostel",
+                "value": {
+                  "input": {
+                    "text": "Men’s Hostel MBCET Hostel for men (Mar Aprem Hostel) can accommodate around 350 students on single room, twin sharing or dormitory basis. Spacious rooms with separate area for living and study are provided. Warden: Rev. Fr. John Vilayil Phone: 0471-2534415   Ladies Hostel MBCET Hostel for women on the campus can accommodate around 250 students. The hostel has 83 three shared rooms. Warden: Rev. Sister Jessin, FDJSH – (Mob: 8281887569)"
+                  }
+                }
+              },
+              {
+                "label": "Canteen",
+                "value": {
+                  "input": {
+                    "text": "The Canteen is a meeting place for students and staff during break hours. Located in the Amenities Centre, Akshaya, the canteen provides nutritious and hygenic food at nominal cost. Besides the Canteen, a Cafeteria also works in the College campus, on working days."
+                  }
+                }
+              },
+              {
+                "label": "Chapel",
+                "value": {
+                  "input": {
+                    "text": "Prayer and worship are important in the life of all people of faith. MBCET fulfils this innate desire, for those who wish, through the St. Basil’s Chapel. Erected in the shape of a bell, under the Buddhist influence by the Founder, it offers a centre for quiet worship and meditation for all. The chapel leads us to discover and explore authentic avenues by which we glorify God. The Jesus Youth MBCET wing conducts regular prayer meetings. Every year a short term Yoga course is conducted besides the Yes! + Course under the Art of Living Programme."
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1601724572239",
+      "conditions": "@CollegeInformation:information",
+      "dialog_node": "response_7_1601800879934",
+      "previous_sibling": "response_4_1601799162675"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please be more specific on the information you are looking for..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:about",
+      "dialog_node": "response_8_1601799285498",
+      "previous_sibling": "response_9_1601798941971"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon! How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601712392573",
+      "conditions": "@greetings:(Good Afternoon)",
+      "dialog_node": "response_9_1601712754643",
+      "previous_sibling": "response_1_1601712684323"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi! How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601712392573",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1601712816952",
+      "previous_sibling": "response_7_1601794349088"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Prayer and worship are important in the life of all people of faith. MBCET fulfils this innate desire, for those who wish, through the St. Basil’s Chapel. Erected in the shape of a bell, under the Buddhist influence by the Founder, it offers a centre for quiet worship and meditation for all. The chapel leads us to discover and explore authentic avenues by which we glorify God. The Jesus Youth MBCET wing conducts regular prayer meetings. Every year a short term Yoga course is conducted besides the Yes! + Course under the Art of Living Programme."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:Chapel",
+      "dialog_node": "response_9_1601789791210",
+      "previous_sibling": "response_4_1601789778974"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Canteen is a meeting place for students and staff during break hours. Located in the Amenities Centre, Akshaya, the canteen provides nutritious and hygenic food at nominal cost. Besides the Canteen, a Cafeteria also works in the College campus, on working days."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601724572239",
+      "conditions": "@CollegeInformation:Canteen",
+      "dialog_node": "response_9_1601790331952",
+      "previous_sibling": "response_3_1601790320925"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dr T M George"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:director",
+      "dialog_node": "response_9_1601795585406",
+      "previous_sibling": "response_6_1601793133846"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please visit https://mbcet.ac.in/admissions/ph-d/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1601731204402",
+      "conditions": "@enquiry:Research",
+      "dialog_node": "response_9_1601798941971",
+      "previous_sibling": "response_6_1601798914753"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello! Hope you are doing well. I am a bot to assist you on Mar Baselios College of Engineering and Technology (MBCET). "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": " Mar Baselios College of Engineering and Technology",
+            "source": "https://mbcet.ac.in/wp-content/uploads/2018/12/about-banner.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
